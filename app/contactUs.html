@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us | A Night In The Tropics</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+  </head>
+  <body class='bgnd'>
+    <div class="nav-bar-top">
+      <a href='index.html'><img height="100%" src="res/logo.png" alt="logo"></a>
+      <ul class="nav nav-pills">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='menu.html'>Menu Items</a></li>
+        <li><a href='locations.html'>Locations</a></li>
+        <li><a href='aboutUs.html'>About Us</a></li>
+        <li class='active'><a href='#'>Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-bar-side">
+      <img width="100%" src="res/logo.png" alt="logo">
+      <hr>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a data-toggle="pill" href="#comments">Comments</a></li>
+        <li><a data-toggle="pill" href="#catering">Catering</a></li>
+        <li><a data-toggle="pill" href="#hireMe">Hire Me</a></li>
+      </ul>
+    </div>
+
+
+    <div class="container-fluid offset page">
+    <a href='index.html'><img width='100%' src="res/logo_banner.png" alt="A Night In The Tropics Banner"></a>
+
+
+      <h1 class='page-title'>Contact Us</h1>
+      <div class='content tab-content'>
+        <section id='comments' class='tab-pane fade in active'>
+          <h2 class='title'>Comments & Complaints</h2>
+          <p>Had an incredible time with us and want to let us know?
+          Had a bad experience with a server? <br>Have something you'd like to
+          see for your next visit? Good or bad, we'd like to know what's on your
+          mind.</p>
+          <hr>
+          <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="commentName">Name: </label>
+                    <input type="text" name="name" value="" id='commentName' placeholder="First Name or Nickname" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="commentDate">Date of Visit: </label>
+                    <input type="date" name="date" value="" id='commentDate' required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="commentGender">Gender: </label>
+                    <select name="gender" id='commentGender' required>
+                      <option value="">Select One</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="commentAge">Age Range: </label>
+                    <select name="age" id='commentAge' required>
+                      <option value="">Select One</option>
+                      <option value="youth">0 - 15</option>
+                      <option value="young_adult">16 - 21</option>
+                      <option value="adult">22 - 35</option>
+                      <option value="older">36 - 59</option>
+                      <option value="elderly">60+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="commentName">Email: </label>
+                    <input type="email" name="name" value="" id='commentEmail' placeholder="Email Address" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <label for="commentType">Comment Type: </label>
+                    <select name="commentType" id='commentType' required>
+                      <option value="">Select One</option>
+                      <option value="suggestion">Suggestion</option>
+                      <option value="compliment">Compliment</option>
+                      <option value="complaint">Complaint</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="comment">Comment: </label>
+                <textarea name="comment" rows="15" cols="80" id='comment' required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <button type="submit">Submit Comment</button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section id='catering' class='tab-pane fade'>
+          <h2 class='title'>Catering</h2>
+          <p>Have an event coming up that needs catering? <br>
+            Big or small, you can depend on us to feed those mouths</p>
+            <hr>
+          <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+            <div class="row">
+              <!--<div class="col-6">
+                <table class='form'>
+                  <tr><td>First Name</td> <td><input type="text" name="firstName" value="" id='firstName'></td></tr>
+                  <tr><td>Last Name</td> <td><input type="text" name="lastName" value="" id='lastName'></td></tr>
+                  <tr><td>Phone Number</td> <td><input type="tel" name="phone" value="" id='phoneNumber'></td></tr>
+                  <tr><td>Email Address</td> <td><input type="email" name="name" value="" id='cateringEmail'></td></tr>
+                  <tr><td>Delivery Address</td> <td><input type="text" name="deliveryAddress" value="" id='deliveryAddress'></td></tr>
+                  <tr><td>Billing Address</td> <td><input type="text" name="billingAddress" value="" id='billingAddress'></td></tr>
+                  <tr><td>Delivery Date</td> <td><input type="date" name="deliveryDate" value="" id='deliveryDate'></td></tr>
+                  <tr><td>Delivery Time</td> <td><input type="time" name="deliveryTime" value="" id='deliveryTime'></td></tr>
+                </table>
+              </div>-->
+              <div class="col-sm-4">
+                <label for="fullName">Full Name: </label>
+                <input type="text" name="name" value="" id='fullName' required>
+              </div>
+              <div class="col-sm-4">
+                <label for="phoneNumber">Phone Number: </label>
+                <input type="tel" name="phone" value="" id='phoneNumber' required>
+              </div>
+              <div class="col-sm-4">
+                <label for="cateringEmail">Email Address</label>
+                <input type="email" name="email" value="" id='cateringEmail' required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="deliveryAddress">Delivery Address: </label>
+                <input type="text" name="deliveryAddress" value="" id='deliveryAddress' required>
+              </div>
+              <div class="col-sm-6">
+                <label for="billingAddress">Billing Address: </label>
+                <input type="text" name="billingAddress" value="" id='billingAddress' required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="dateTime">Date and Time for Delivery: </label>
+                <div id='dateTime'>
+                  <div class="col-sm-4">
+                    <label class='label-small' for="deliveryDate">Date: </label>
+                    <input type="date" name="deliveryDate" value="" id='deliveryDate' required>
+                  </div>
+                  <div class="col-sm-3">
+                    <label class='label-small' for="deliveryTime">Time: </label>
+                    <input type="time" name="deliveryTime" value="" id='deliveryTime' required>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <label for="dateTime">Date and Time for Appointment: </label>
+                <div id='dateTime'>
+                  <div class="col-sm-4">
+                    <label class='label-small' for="appointmentDate">Date: </label>
+                    <input type="date" name="applicationDate" value="" id='applicationDate' required>
+                  </div>
+                  <div class="col-sm-3">
+                    <label class='label-small' for="appointmentTime">Time: </label>
+                    <input type="time" name="applicationTime" value="" id='applicationTime' required>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <button type="submit">Submit Order</button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+
+        <section id='hireMe' class='tab-pane fade'>
+          <h2 class='title'>Employment Opportunity</h2>
+          <p>We're always looking for new capable hands to help serve our
+            wonderful customers. <br>
+            If you believe that you would be a good fit
+            for this fast pace environment while keepnig a smile on your face,
+            fill in your information below and we'll be in touch.</p>
+            <hr>
+          <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post">
+            <div class="row">
+              <div class="col-sm-4">
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" value="" id='firstName' required>
+              </div>
+              <div class="col-sm-2">
+                <label for="initial">M.I.: </label>
+                <input type="text" name="initial" value="" id='initial'>
+              </div>
+              <div class="col-sm-6">
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" value="" id='lastName' required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="employmentEmail">Email Address</label>
+                <input type="email" name="email" value="" id='employmentEmail' required>
+              </div>
+              <div class="col-sm-4">
+                <label for="education">Highest Education Level Completed: </label>
+                <select name="education" required>
+                  <option value="highSchool">High School Diploma/GED</option>
+                  <option value="undergraduate">Undergraduate Degree</option>
+                  <option value="graduate">Graduate Degree</option>
+                </select>
+              </div>
+              <div class="col-sm-2">
+                <label for="resume">Resume</label>
+                <input type="file" name="resume" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <label for="coverLetter">Cover Letter: </label>
+                <textarea name="coverLetter" rows="8" cols="180" required></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <button type="submit">Submit Application</button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+      </div>
+
+    </div>
+
+    <div class='container footer'>
+      <div class="row">
+        <div class="col-sm-4">
+          <img width='315.09px' src="res/agm_logo.png" alt="Greater Men Inc. Logo"> <br>
+          <span style='color: beige'>Privacy Policy © 2018 Greater Men Inc. All Rights Reserved.</span>
+        </div>
+        <div class="col-sm-4">
+          <img width='374.34px' src="res/ace.png" alt="Ace of Arts Logo">
+          <br> <br>
+          <p>&lt;	&#47; &gt;&nbsp; by Angel K. Campbell<br>
+            CST 2309 Midterm<br>
+            New York City College of New York<br>
+            Spring 2018<br>
+            <a class='white' href='mailto:akcampbell160@gmail.com'>AKCampbell160@gmail.com</a></p>
+        </div>
+        <div class="col-sm-4">
+          <img width='220px' src="res/logo.png" alt="ANITT Logo"> <br>
+          Privacy Policy © 2018 A Night In The Tropics. All Rights Reserved.
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
